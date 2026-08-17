@@ -1,0 +1,330 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#1B3D58",
+					"name": "Blue",
+					"slug": "blue"
+				},
+				{
+					"color": "#F5F2ED",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#EBDED6",
+					"name": "Bezh",
+					"slug": "bezh"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1720px",
+			"wideSize": "1920px"
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "Tiny",
+					"size": "20px",
+					"slug": "tiny"
+				},
+				{
+					"name": "X-Small",
+					"size": "clamp(1.125rem, 0.943rem + 0.78vw, 1.875rem);",
+					"slug": "x-small"
+				},
+				{
+					"name": "Small",
+					"size": "clamp(1.25rem, 1.098rem + 0.65vw, 1.875rem)",
+					"slug": "small"
+				},
+				{
+					"name": "Regular",
+					"size": "clamp(1.563rem, 1.183rem + 1.62vw, 3.125rem)",
+					"slug": "regular"
+				},
+				{
+					"name": "Large",
+					"size": "clamp(1.875rem, 1.117rem + 3.24vw, 5rem);",
+					"slug": "large"
+				},
+				{
+					"name": "X-Large",
+					"size": "clamp(3.125rem, 2.063rem + 4.53vw, 7.5rem)",
+					"slug": "x-large"
+				}
+			],
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-100-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-200-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-300-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-800-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-900-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-100-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-200-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-300-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-400-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-500-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-600-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-700-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-800-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/montserrat/montserrat-900-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Montserrat, sans-serif",
+					"name": "Montserrat",
+					"slug": "montserrat"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Tiny",
+					"size": "clamp(0.938rem, 0.922rem + 0.06vw, 1rem)",
+					"slug": "tiny"
+				},
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": "clamp(0.938rem, 0.831rem + 0.45vw, 1.375rem)",
+					"slug": "small"
+				},
+				{
+					"fluid": false,
+					"name": "Medium",
+					"size": "clamp(1.125rem, 0.943rem + 0.78vw, 1.875rem)",
+					"slug": "medium"
+				},
+				{
+					"fluid": false,
+					"name": "Large",
+					"size": "clamp(1.563rem, 1.123rem + 1.88vw, 3.375rem)",
+					"slug": "large"
+				},
+				{
+					"fluid": false,
+					"name": "X-Large",
+					"size": "clamp(1.563rem, 0.576rem + 4.21vw, 5.625rem)",
+					"slug": "x-large"
+				}
+			],
+			"writingMode": true
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--bezh)",
+			"text": "var(--wp--preset--color--blue)"
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--blue)",
+					"text": "var(--wp--preset--color--white)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--montserrat)",
+					"fontWeight": "100"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--montserrat)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--x-large)"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--montserrat)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--montserrat)"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "0px"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--montserrat)",
+			"fontSize": "var(--wp--preset--font-size--tiny)"
+		},
+		"css": "* { padding: 0; margin: 0; outline: none; scroll-behavior: smooth; font-family: \"Montserrat\", sans-serif; color: var(--wp--preset--color--blue); } *::-webkit-scrollbar { width: 8px; height: 8px; } *::-webkit-scrollbar-track { background: var(--wp--preset--color--white); } *::-webkit-scrollbar-thumb { background: var(--wp--preset--color--blue); border-radius: 10px; } *::-moz-selection { color: var(--wp--preset--color--blue); background: var(--wp--preset--color--bezh); } *::selection { color: var(--wp--preset--color--blue); background: var(--wp--preset--color--bezh); } body { background: var(--wp--preset--color--white); } .body-overflow { overflow: hidden; } a, a strong { cursor: pointer; text-decoration: none; transition: 0.3s; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } a:hover, a strong:hover { transition: 0.3s; opacity: 0.7; } li { -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } button { border: none; background: none; cursor: pointer; transition: 0.3s; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } button:hover { transition: 0.3s; opacity: 0.7; } .container { box-sizing: border-box; width: 100%; margin: 0 auto; max-width: 1720px; padding: 0 20px; } @media (max-width: 1700px) { .container { padding: 0 40px; } } @media (max-width: 1400px) { .container { max-width: 1140px; padding: 0 20px; } } @media (max-width: 1199px) { .container { max-width: 960px; } } @media (max-width: 991px) { .container { max-width: 720px; } } @media (max-width: 767px) { .container { max-width: 540px; } } @media (max-width: 575px) { .container { padding: 0 20px; } }"
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	]
+}

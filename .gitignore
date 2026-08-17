@@ -1,0 +1,27 @@
+# Игнорировать всё
+/*
+
+# Разрешить важное из корня
+!.github
+!.gitignore
+
+# Разрешить wp-content
+!/wp-content/
+
+# Игнорировать всё внутри wp-content
+/wp-content/*
+
+# Разрешить wp-content
+!/wp-content/mu-plugins/
+!/wp-content/plugins/
+!/wp-content/themes/
+
+# Игнорировать всё внутри plugins, themes
+/wp-content/plugins/*
+/wp-content/themes/*
+
+# Разрешить определенные plugins, themes
+!/wp-content/themes/psychologist-vas/
+!/wp-content/plugins/phpavel*/
+!/wp-content/plugins/snd*/
+!/wp-content/plugins/psychologist-vas*/
