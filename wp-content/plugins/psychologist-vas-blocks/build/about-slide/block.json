@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snd/about-slide",
+  "version": "0.1.0",
+  "title": "Обо мне слайд",
+  "category": "snd-blocks",
+  "icon": "format-image",
+  "parent": [
+    "snd/about-slider"
+  ],
+  "example": {
+    "viewportWidth": 1200
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "id": 0,
+        "url": "",
+        "alt": "",
+        "size": "large",
+        "sizes": {}
+      }
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

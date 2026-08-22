@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snd/about",
+  "version": "0.1.0",
+  "title": "Обо мне",
+  "category": "snd-blocks",
+  "example": {
+    "viewportWidth": 1200
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "imageBg": {
+			"type": "object",
+			"default": {
+				"id": 0,
+				"url": "",
+				"alt": "",
+				"size": "large",
+				"sizes": {}
+			}
+		}
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "swiper",
+    "file:./style-index.css"
+  ],
+  "viewScript": [
+		"glightbox",
+    "swiper",
+    "file:./view.js"
+  ],
+  "render": "file:./render.php"
+}

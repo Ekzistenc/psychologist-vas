@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e="wp-block-snd-about";document.querySelectorAll(`.${e}`).forEach((t,n)=>{t.classList.add(`${e}-${n}`),new Swiper(`.${e}-${n} .swiper-about`,{effect:"cards",centeredSlides:!0,slidesPerView:"auto",navigation:{nextEl:`.${e}-${n} .swiper-about-next`,prevEl:`.${e}-${n} .swiper-about-prev`}})})});

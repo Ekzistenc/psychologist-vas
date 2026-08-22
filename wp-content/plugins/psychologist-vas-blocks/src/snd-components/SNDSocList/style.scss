@@ -1,0 +1,157 @@
+$color-border: #e0e0e0;
+$color-background: #fbfbfb;
+$color-text: #333;
+
+.snd-soclist-panel {
+	&--saving {
+		opacity: 0.5;
+		pointer-events: none;
+		animation: snd-soclist-panel-saving 1s infinite;
+	}
+
+	&__button-create-new-list {
+		margin-bottom: 16px;
+	}
+
+	&__button-delete-list {
+		display: block;
+		margin-top: -8px;
+		margin-bottom: 16px;
+		margin-left: auto;
+	}
+
+	&__progress-bar {
+		width: 100% !important;
+	}
+
+	@keyframes snd-soclist-panel-saving {
+		0% {
+			opacity: 0.5;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0.5;
+		}
+	}
+}
+
+.snd-soclist-repeater {
+	padding-top: 16px;
+	border-top: 1px solid $color-border;
+
+	&__label {
+		display: block;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 11px;
+		margin-bottom: 16px;
+	}
+
+	&__item {
+		display: block;
+		margin-bottom: 10px;
+
+		summary {
+			display: flex;
+			cursor: pointer;
+			gap: 5px;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 5px;
+			border: 1px solid $color-border;
+			background-color: $color-background;
+
+			.snd-soclist-repeater__dragabble-element {
+				cursor: move;
+				position: relative;
+				padding: 5px;
+				width: 7px;
+				height: 7px;
+
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					margin: auto;
+					inset: 0;
+					width: 7px;
+					height: 1px;
+					background-color: #333;
+				}
+
+				&:before {
+					transform: translateY(2px);
+				}
+
+				&:after {
+					transform: translateY(-2px);
+				}
+			}
+
+			.snd-soclist-repeater__item-name {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+
+				img {
+					width: 20px;
+					height: 20px;
+					object-fit: cover;
+					object-position: center;
+					background-color: var(--wp--preset--color--blue);
+					vertical-align: middle;
+					border: 1px solid $color-border;
+				}
+
+				span {
+					display: inline-block;
+					overflow: hidden;
+					max-width: 140px;
+					width: 100%;
+				}
+			}
+
+			.is-destructive {
+				position: relative;
+				margin-left: auto;
+				padding: 5px;
+				width: 10px;
+				height: 10px;
+
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					width: 10px;
+					height: 1px;
+					background-color: var(--wp--preset--color--blue, var(--wp--preset--color--blue, #1B3D58));
+					inset: 0;
+					margin: auto;
+				}
+
+				&:before {
+					transform: rotate(45deg);
+				}
+
+				&:after {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+		.snd-soclist-repeater__item-content {
+			padding: 10px;
+			border: 1px solid $color-border;
+			border-top: none;
+			background-color: $color-background;
+		}
+	}
+
+	details[data-rfd-placeholder-context-id] {
+		opacity: 0;
+	}
+}
