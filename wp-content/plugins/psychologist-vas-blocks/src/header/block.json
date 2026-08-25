@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "snd/header",
+	"version": "0.1.0",
+	"title": "Шапка",
+	"category": "snd-blocks",
+	"icon": "table-row-before",
+	"example": {
+		"viewportWidth": 1200
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		},
+		"colorHeader": {
+			"type": "string",
+			"default": ""
+		},
+		"menuHeader": {
+			"type": "number",
+			"default": 0
+		},
+		"menuMobile": {
+			"type": "number",
+			"default": 0
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"name": "Записаться на консультацию →",
+				"href": "#contacts"
+			}
+		}
+	},
+	"providesContext": {
+		"snd/headerMenuHeader": "menuHeader",
+		"snd/headerButton": "button"
+	},
+	"supports": {
+		"html": false,
+		"align": true,
+		"anchor": true
+	},
+	"textdomain": "sndpshsite-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": [
+		"file:./style-index.css"
+	],
+	"viewScript": [
+		"file:./view.js"
+	],
+	"render": "file:./render.php"
+}

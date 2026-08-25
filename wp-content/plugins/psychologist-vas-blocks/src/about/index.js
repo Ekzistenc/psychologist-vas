@@ -11,14 +11,13 @@ import {
 
 import './editor.scss';
 import './style.scss';
-import { inlineImage } from '@wordpress/icons';
 
 import SNDMediaUpload from '../snd-components/SNDMediaUpload';
 
 import metadata from './block.json';
 
 registerBlockType(metadata.name, {
-	icon: inlineImage,
+	icon: 'cover-image',
 	edit: ({ attributes, setAttributes }) => {
 		const { imageBg } = attributes;
 
@@ -27,7 +26,7 @@ registerBlockType(metadata.name, {
 		}, {
 			template: [
 				['snd/about-slider'],
-			// 	['snd/about-text']
+				['snd/about-text'],
 			],
 			allowedBlocks: ['snd/about-slider', 'snd/about-text'],
 			orientation: 'horizontal'

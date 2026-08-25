@@ -1,1 +1,46 @@
-.wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-header__button{align-items:center;background:var(--wp--preset--color--blue);border-radius:10px;color:var(--wp--preset--color--white);display:flex;font-size:clamp(.938rem,.892rem + .19vw,1.125rem);justify-content:center;padding:clamp(1rem,.954rem + .19vw,1.188rem) 13px;position:relative;text-decoration:none}.wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-header__button:before{background:linear-gradient(-90deg,#1b3d58,#f5f2ed);border-radius:11px;content:"";inset:-1px;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;padding:1px;pointer-events:none;position:absolute;transition:.5s}.wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-main__soc--item{align-items:center;align-self:flex-end;display:flex;flex-direction:column;gap:clamp(1.25rem,.947rem + 1.29vw,2.5rem)}@media(max-width:575px){.wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-main__soc--item{right:20px;position:absolute;top:200px}}
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/main/editor.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+.wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-header__button {
+  position: relative;
+  background: var(--wp--preset--color--blue);
+  /* тёмно-синий фон */
+  color: var(--wp--preset--color--white);
+  padding: clamp(1rem, 0.954rem + 0.19vw, 1.188rem) 13px;
+  font-size: clamp(0.938rem, 0.892rem + 0.19vw, 1.125rem);
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Градиентный бордер */
+}
+.wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-header__button::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  /* 1px наружу */
+  border-radius: 11px;
+  /* border-radius + 1px */
+  padding: 1px;
+  /* ТОЛЩИНА РАМКИ = 1px */
+  background: linear-gradient(-90deg, #1B3D58, #F5F2ED);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-main__soc--item {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.25rem, 0.947rem + 1.29vw, 2.5rem);
+}
+@media (max-width: 575px) {
+  .wp-block-snd-main .wp-block-snd-main__text .wp-block-snd-main__soc--item {
+    position: absolute;
+    right: 20px;
+    top: 200px;
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snd/articles",
+  "version": "0.1.0",
+  "title": "Список статей",
+  "category": "snd-blocks",
+  "icon": "admin-post",
+  "example": {
+    "viewportWidth": 1200
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": "Случаи из практики"
+    },
+    "categoryId": {
+      "type": "number",
+      "default": 0
+    },
+    "postsCount": {
+      "type": "number",
+      "default": 10
+    },
+    "variant": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "anchor": true
+  },
+  "textdomain": "sndpshsite-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "swiper",
+    "file:./style-index.css"
+  ],
+  "viewScript": [
+    "swiper",
+    "file:./view.js"
+  ],
+  "render": "file:./render.php"
+}

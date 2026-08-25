@@ -1,0 +1,117 @@
+$color-border: #e0e0e0;
+$color-background: #fbfbfb;
+$color-text: #333;
+
+.snd-list-control {
+  &__label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 10px;
+
+    summary {
+      display: flex;
+      cursor: pointer;
+      gap: 5px;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 5px;
+      border: 1px solid $color-border;
+      background-color: $color-background;
+
+      .snd-list-control__dragabble-element {
+        cursor: move;
+        position: relative;
+        padding: 5px;
+        width: 7px;
+        height: 7px;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          margin: auto;
+          inset: 0;
+          width: 7px;
+          height: 1px;
+          background-color: $color-text;
+        }
+
+        &:before {
+          transform: translateY(2px);
+        }
+
+        &:after {
+          transform: translateY(-2px);
+        }
+      }
+
+      .snd-list-control__item-name {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+          object-position: center;
+          background-color: #f0f0f0;
+          vertical-align: middle;
+          border: 1px solid $color-border;
+        }
+
+        span {
+          display: inline-block;
+          overflow: hidden;
+          max-width: 140px;
+          width: 100%;
+        }
+      }
+
+      .is-destructive {
+        position: relative;
+        margin-left: auto;
+        padding: 5px;
+        width: 10px;
+        height: 10px;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 1px;
+          background-color: var(--wp-components-color-accent-darker-20, var(--wp-admin-theme-color-darker-20, #183ad6));
+          inset: 0;
+          margin: auto;
+        }
+
+        &:before {
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .snd-list-control__item-content {
+      padding: 10px;
+      border: 1px solid $color-border;
+      border-top: none;
+      background-color: $color-background;
+    }
+  }
+
+  details[data-rfd-placeholder-context-id] {
+    opacity: 0;
+  }
+}

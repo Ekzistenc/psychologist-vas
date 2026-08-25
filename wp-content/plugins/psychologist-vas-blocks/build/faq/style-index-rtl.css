@@ -1,0 +1,75 @@
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/faq/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+.wp-block-snd-faq {
+  padding: clamp(3.125rem, 2.063rem + 4.53vw, 7.5rem) 0;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wp-block-snd-faq h2 {
+  font-weight: 400;
+  font-size: clamp(1.563rem, 1.123rem + 1.88vw, 3.375rem);
+  margin-bottom: clamp(1.25rem, 0.795rem + 1.94vw, 3.125rem);
+  color: var(--wp--preset--color--white);
+}
+@media (max-width: 1199px) {
+  .wp-block-snd-faq h2 {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.wp-block-snd-faq__details-box {
+  padding-bottom: clamp(1.563rem, 1.487rem + 0.32vw, 1.875rem);
+  border-bottom: 1px var(--wp--preset--color--white) solid;
+}
+.wp-block-snd-faq__details-box:not(:last-child) {
+  margin-bottom: clamp(1.563rem, 1.487rem + 0.32vw, 1.875rem);
+}
+
+.wp-block-snd-faq__details {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wp-block-snd-faq__summary {
+  font-size: clamp(1.125rem, 0.943rem + 0.78vw, 1.875rem);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--wp--preset--color--white);
+  list-style: none;
+}
+.wp-block-snd-faq__summary::after {
+  content: "+";
+  font-size: clamp(1.563rem, 1.487rem + 0.32vw, 1.875rem);
+  transition: 0.3s;
+  flex-shrink: 0;
+  color: var(--wp--preset--color--white);
+  font-weight: 600;
+}
+.wp-block-snd-faq__summary::marker, .wp-block-snd-faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+.wp-block-snd-faq__details[open] .wp-block-snd-faq__summary {
+  transition: 0.3s;
+}
+.wp-block-snd-faq__details[open] .wp-block-snd-faq__summary::after {
+  transform: rotate(-45deg);
+  transition: 0.3s;
+  filter: hue-rotate(140deg);
+}
+
+.wp-block-snd-faq__content {
+  padding-top: clamp(0.938rem, 0.71rem + 0.97vw, 1.875rem);
+}
+.wp-block-snd-faq__content p {
+  font-size: clamp(0.938rem, 0.922rem + 0.06vw, 1rem);
+  color: var(--wp--preset--color--white);
+}

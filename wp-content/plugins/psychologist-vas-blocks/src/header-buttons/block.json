@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "snd/header-buttons",
+	"version": "0.1.0",
+	"title": "Кнопки шапки",
+	"category": "snd-blocks",
+	"icon": "button",
+	"parent": ["snd/header"],
+	"usesContext": ["snd/headerButton"],
+	"attributes": {
+		"button": {
+			"type": "object",
+			"default": {
+				"name": "Записаться на консультацию →",
+				"href": "#contacts"
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"reusable": false
+	},
+	"textdomain": "sndpshsite-blocks",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

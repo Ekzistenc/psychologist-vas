@@ -23,6 +23,7 @@ define("SND_PSH_BLOCKS_DIR", plugin_dir_path(__FILE__));
 define("SND_PSH_BLOCKS_URL", plugin_dir_url(__FILE__));
 
 require_once SND_PSH_BLOCKS_DIR . 'includes/soclist.php';
+require_once SND_PSH_BLOCKS_DIR . 'includes/gallery.php';
 
 function snd_block_categories($categories)
 {
@@ -123,7 +124,7 @@ function snd_register_bls_block_assets()
 		plugins_url('assets/css/swiper-bundle.min.css', __FILE__)
 	);
 }
-add_action('wp_enqueue_scripts', 'snd_register_bls_block_assets');
+add_action('init', 'snd_register_bls_block_assets', 5);
 
 function snd_theme_setup()
 {

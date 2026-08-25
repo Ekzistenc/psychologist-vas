@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".swiper-articles").forEach(e=>{const s=e.nextElementSibling;s&&s.classList.contains("swiper-scrollbar-articles")&&new Swiper(e,{slidesPerView:1,spaceBetween:10,breakpoints:{768:{slidesPerView:2,spaceBetween:20}},scrollbar:{el:s,draggable:!0}})})});

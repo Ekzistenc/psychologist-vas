@@ -51,8 +51,8 @@ registerBlockType(metadata.name, {
 
 				<div {...useBlockProps({ className: 'swiper-slide' })}>
 					{image?.url && (
-						<a href="#" class="glightbox1">
-							<img src={image.url} />
+						<a href="#" className="glightbox1">
+							<img src={image.url} alt="" />
 						</a>
 					)
 					}
