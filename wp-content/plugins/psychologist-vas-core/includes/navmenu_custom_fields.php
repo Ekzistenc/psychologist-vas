@@ -49,7 +49,7 @@ function snd_menu_image_admin_scripts($hook)
 {
 	if ($hook == 'nav-menus.php') {
 		wp_enqueue_media();
-		wp_enqueue_script('menu-image-admin', SND_PSH_BLOCKS_URL . 'assets/js/menu-image-admin.js', array('jquery'), null, true);
+		wp_enqueue_script('menu-image-admin', SND_PSH_URL . 'assets/js/menu-image-admin.js', array('jquery'), null, true);
 	}
 }
 
@@ -126,3 +126,4 @@ function snd_add_menu_image_class($classes, $item, $args, $depth)
 	}
 	return $classes;
 }
+

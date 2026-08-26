@@ -5,18 +5,16 @@ import {
 	InnerBlocks,
 } from '@wordpress/block-editor';
 
-import { gallery } from '@wordpress/icons';
 import metadata from './block.json';
 
 registerBlockType(metadata.name, {
-	icon: gallery,
+	icon: 'gallery',
 	edit: ({ }) => {
 		const innerBlocksProps = useInnerBlocksProps({
 			className: 'swiper-wrapper'
 		}, {
 			template: [
 				['snd/about-slide'],
-			// 	['snd/about-text']
 			],
 			allowedBlocks: ['snd/about-slide'],
 			orientation: 'horizontal'

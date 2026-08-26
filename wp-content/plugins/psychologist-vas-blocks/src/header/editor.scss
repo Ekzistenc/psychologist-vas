@@ -1,0 +1,9 @@
+.wp-block-snd-header {
+	a {
+		pointer-events: none;
+	}
+
+	&:not(.blue) {
+		background: dimgray;
+	}
+}

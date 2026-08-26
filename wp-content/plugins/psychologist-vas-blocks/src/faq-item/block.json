@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "snd/faq-item",
+	"version": "0.1.0",
+	"title": "FAQ вопрос",
+	"category": "snd-blocks",
+	"icon": "editor-help",
+	"parent": ["snd/faq"],
+	"attributes": {
+		"question": {
+			"type": "string",
+			"default": "Вопрос"
+		},
+		"answer": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"inserter": true,
+		"reusable": false
+	},
+	"textdomain": "sndpshsite-blocks",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

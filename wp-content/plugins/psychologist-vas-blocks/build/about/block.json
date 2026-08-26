@@ -36,6 +36,7 @@
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": [
+    "glightbox",
     "swiper",
     "file:./style-index.css"
   ],

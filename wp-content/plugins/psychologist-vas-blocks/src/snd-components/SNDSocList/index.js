@@ -107,7 +107,7 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 	};
 
 	const onDeleteList = (listId) => {
-		if (!confirm('Вы действительно хотите удалить список соцсетей?')) return;
+		if (!confirm('Are you sure you want to delete this list of social networks?')) return;
 
 		setIsSaving(true);
 
@@ -171,14 +171,14 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 						__next40pxDefaultSize
 						__nextHasNoMarginBottom
 						className="snd-soclist-panel__select-list"
-						label="Выберите список соцсетей"
+						label="Select a list of social networks"
 						value={currentSocListId}
 						options={[
 							...lists.map((l) => ({
 								label: l.name || `Social  #${l.id}`,
 								value: l.id,
 							})),
-							{ label: 'Создать новый список...', value: 'new' },
+							{ label: 'Create a new list...', value: 'new' },
 						]}
 						onChange={(currentSocListId) => {
 							if (onChangeSocListId) {
@@ -209,7 +209,7 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 							size="small"
 							onClick={onSaveNewList}
 						>
-							Создать новый список
+							Create a new list
 						</Button>
 					) : (
 						<>
@@ -220,7 +220,7 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 								isDestructive={true}
 								onClick={() => onDeleteList(currentSocListId)}
 							>
-								Удалить список
+								Delete the list
 							</Button>
 
 							<DragDropContext onDragEnd={onSocsDragEnd}>
@@ -232,7 +232,7 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 											className="snd-soclist-repeater"
 										>
 											<label className="snd-soclist-repeater__label">
-												Список соцсетей
+												Social media list
 											</label>
 
 											{socs?.map((item, index) => (
@@ -257,7 +257,7 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 
 																<Button
 																	className="is-secondary is-destructive is-small"
-																	title="Удалить элемент"
+																	title="Delete the link"
 																	onClick={() => {
 																		const updatedSocs = [...socs];
 																		updatedSocs.splice(index, 1);
@@ -302,14 +302,14 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 																	onChangeMedia={(image) => {
 																		onChangeSocsItem(index, image, 'icon');
 																	}}
-																	label="Выбрать иконку"
+																	label="Select icon"
 																	labelButton={
-																		socs[index]?.icon?.id ? 'Изменить иконку' : 'Выбрать иконку'
+																		socs[index]?.icon?.id ? 'Change the icon' : 'Select icon'
 																	}
 																/>
 
 																<TextControl
-																	label="Имя"
+																	label="Name"
 																	value={item.name}
 																	onChange={(value) =>
 																		onChangeSocsItem(index, value, 'name')
@@ -319,7 +319,7 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 																/>
 
 																<TextControl
-																	label="Ссылка"
+																	label="Link"
 																	type="url"
 																	value={item.link}
 																	onChange={(value) =>
@@ -342,7 +342,7 @@ export default function SNDSocList({ currentSocListId, onChangeSocListId, onChan
 												size="small"
 												onClick={onClickAddSocsItem}
 											>
-												Добавить ссылку
+												Add a link
 											</Button>
 										</div>
 									)}

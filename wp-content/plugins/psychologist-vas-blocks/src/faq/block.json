@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "snd/faq",
+	"version": "0.1.0",
+	"title": "FAQ",
+	"category": "snd-blocks",
+	"icon": "editor-help",
+	"example": {
+		"viewportWidth": 1200
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"anchor": {
+			"type": "string",
+			"default": "faq"
+		},
+		"title": {
+			"type": "string",
+			"default": "Часто задаваемые вопросы"
+		},
+		"imageBg": {
+			"type": "object",
+			"default": {
+				"id": 0,
+				"url": "",
+				"alt": "",
+				"size": "large",
+				"sizes": {}
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true,
+		"anchor": true
+	},
+	"textdomain": "sndpshsite-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": ["file:./style-index.css"],
+	"viewScript": ["file:./view.js"],
+	"render": "file:./render.php"
+}

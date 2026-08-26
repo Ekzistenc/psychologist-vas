@@ -2,9 +2,9 @@
 	.wp-block-snd-main__text {
 		.wp-block-snd-header__button {
 			position: relative;
-			background: var(--wp--preset--color--blue);
+			background: var(--wp--preset--color--blue, #1B3D58);
 			/* тёмно-синий фон */
-			color: var(--wp--preset--color--white);
+			color: var(--wp--preset--color--white, #F5F2ED);
 			padding: clamp(1rem, 0.954rem + 0.19vw, 1.188rem) 13px;
 			font-size: clamp(0.938rem, 0.892rem + 0.19vw, 1.125rem);
 			border-radius: 10px;

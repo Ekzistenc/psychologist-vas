@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snd/about-text",
+  "version": "0.1.0",
+  "title": "Обо мне — текст",
+  "category": "snd-blocks",
+  "icon": "editor-alignleft",
+  "parent": [
+    "snd/about"
+  ],
+  "supports": {
+    "html": false,
+    "inserter": true,
+    "reusable": false
+  },
+  "textdomain": "sndpshsite-blocks",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

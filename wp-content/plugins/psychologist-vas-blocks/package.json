@@ -15,9 +15,11 @@
 		"start": "wp-scripts start --blocks-manifest"
 	},
 	"dependencies": {
+		"@hello-pangea/dnd": "^18.0.1",
 		"@wordpress/block-editor": "latest",
 		"@wordpress/blocks": "latest",
-		"@wordpress/i18n": "latest"
+		"@wordpress/i18n": "latest",
+		"@wordpress/server-side-render": "latest"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^34.1.0"

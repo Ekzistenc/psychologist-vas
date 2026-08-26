@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
@@ -260,13 +260,18 @@
 			],
 			"writingMode": true
 		},
-		"useRootPaddingAwareAlignments": true
+		"useRootPaddingAwareAlignments": true,
+		"viewport": {
+			"mobile": "575px",
+			"tablet": "991px"
+		}
 	},
 	"styles": {
 		"color": {
 			"background": "var(--wp--preset--color--bezh)",
 			"text": "var(--wp--preset--color--blue)"
 		},
+		"css": "* { padding: 0; margin: 0; outline: none; scroll-behavior: smooth; font-family: \"Montserrat\", sans-serif; color: var(--wp--preset--color--blue); } *::-webkit-scrollbar { width: 8px; height: 8px; } *::-webkit-scrollbar-track { background: var(--wp--preset--color--white); } *::-webkit-scrollbar-thumb { background: var(--wp--preset--color--blue); border-radius: 10px; } *::-moz-selection { color: var(--wp--preset--color--blue); background: var(--wp--preset--color--bezh); } *::selection { color: var(--wp--preset--color--blue); background: var(--wp--preset--color--bezh); } body { background: var(--wp--preset--color--white); } .body-overflow { overflow: hidden; } a, a strong { cursor: pointer; text-decoration: none; transition: 0.3s; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } a:hover, a strong:hover { transition: 0.3s; opacity: 0.7; } li { -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } button { border: none; background: none; cursor: pointer; transition: 0.3s; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } button:hover { transition: 0.3s; opacity: 0.7; } .container { box-sizing: border-box; width: 100%; margin: 0 auto; max-width: 1720px; padding: 0 20px; } @media (max-width: 1700px) { .container { padding: 0 40px; } } @media (max-width: 1400px) { .container { max-width: 1140px; padding: 0 20px; } } @media (max-width: 1199px) { .container { max-width: 960px; } } @media (max-width: 991px) { .container { max-width: 720px; } } @media (max-width: 767px) { .container { max-width: 540px; } } @media (max-width: 575px) { .container { padding: 0 20px; } }",
 		"elements": {
 			"button": {
 				"color": {
@@ -314,13 +319,17 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--montserrat)",
 			"fontSize": "var(--wp--preset--font-size--tiny)"
-		},
-		"css": "* { padding: 0; margin: 0; outline: none; scroll-behavior: smooth; font-family: \"Montserrat\", sans-serif; color: var(--wp--preset--color--blue); } *::-webkit-scrollbar { width: 8px; height: 8px; } *::-webkit-scrollbar-track { background: var(--wp--preset--color--white); } *::-webkit-scrollbar-thumb { background: var(--wp--preset--color--blue); border-radius: 10px; } *::-moz-selection { color: var(--wp--preset--color--blue); background: var(--wp--preset--color--bezh); } *::selection { color: var(--wp--preset--color--blue); background: var(--wp--preset--color--bezh); } body { background: var(--wp--preset--color--white); } .body-overflow { overflow: hidden; } a, a strong { cursor: pointer; text-decoration: none; transition: 0.3s; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } a:hover, a strong:hover { transition: 0.3s; opacity: 0.7; } li { -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } button { border: none; background: none; cursor: pointer; transition: 0.3s; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } button:hover { transition: 0.3s; opacity: 0.7; } .container { box-sizing: border-box; width: 100%; margin: 0 auto; max-width: 1720px; padding: 0 20px; } @media (max-width: 1700px) { .container { padding: 0 40px; } } @media (max-width: 1400px) { .container { max-width: 1140px; padding: 0 20px; } } @media (max-width: 1199px) { .container { max-width: 960px; } } @media (max-width: 991px) { .container { max-width: 720px; } } @media (max-width: 767px) { .container { max-width: 540px; } } @media (max-width: 575px) { .container { padding: 0 20px; } }"
+		}
 	},
 	"templateParts": [
 		{
 			"area": "header",
 			"name": "header"
+		},
+		{
+			"area": "header",
+			"name": "header-alt",
+			"title": "Header Alt"
 		},
 		{
 			"area": "footer",
