@@ -2,4 +2,8 @@
 	a {
 		pointer-events: none;
 	}
+
+	&:not(.blue) {
+		background: dimgray;
+	}
 }
