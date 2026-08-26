@@ -24,6 +24,7 @@ define("SND_PSH_BLOCKS_URL", plugin_dir_url(__FILE__));
 
 require_once SND_PSH_BLOCKS_DIR . 'includes/soclist.php';
 require_once SND_PSH_BLOCKS_DIR . 'includes/gallery.php';
+require_once SND_PSH_BLOCKS_DIR . 'includes/posts-archive.php';
 
 function snd_block_categories($categories)
 {
@@ -131,3 +132,14 @@ function snd_theme_setup()
 	register_nav_menus();
 }
 add_action('after_setup_theme', 'snd_theme_setup');
+
+add_filter('register_post_type_args', function ($args, $post_type) {
+	if ($post_type === 'post' || $post_type === 'page') {
+		$args['template'] = [
+			['snd/article']
+		];
+		$args['template_lock'] = false;
+	}
+
+	return $args;
+}, 10, 2);

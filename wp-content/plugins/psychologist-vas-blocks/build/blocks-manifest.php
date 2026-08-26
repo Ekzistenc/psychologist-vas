@@ -41,6 +41,7 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => array(
+			'glightbox',
 			'swiper',
 			'file:./style-index.css'
 		),
@@ -448,10 +449,6 @@ return array(
 			'menuFooterLinksLeft' => array(
 				'type' => 'number',
 				'default' => 0
-			),
-			'menuFooterLinksRight' => array(
-				'type' => 'number',
-				'default' => 0
 			)
 		),
 		'supports' => array(
@@ -659,6 +656,48 @@ return array(
 			'html' => false,
 			'anchor' => true,
 			'align' => true
+		),
+		'textdomain' => 'sndpshsite-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => array(
+			'file:./style-index.css'
+		),
+		'render' => 'file:./render.php'
+	),
+	'posts-archive' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'snd/posts-archive',
+		'version' => '0.1.0',
+		'title' => 'Архив записей',
+		'category' => 'snd-blocks',
+		'icon' => 'archive',
+		'example' => array(
+			'viewportWidth' => 1200
+		),
+		'attributes' => array(
+			'align' => array(
+				'type' => 'string',
+				'default' => 'full'
+			),
+			'anchor' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'title' => array(
+				'type' => 'string',
+				'default' => 'Случаи из практики'
+			),
+			'variant' => array(
+				'type' => 'string',
+				'default' => ''
+			)
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => true,
+			'anchor' => true
 		),
 		'textdomain' => 'sndpshsite-blocks',
 		'editorScript' => 'file:./index.js',

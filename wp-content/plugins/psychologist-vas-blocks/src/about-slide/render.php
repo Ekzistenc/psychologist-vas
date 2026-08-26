@@ -5,7 +5,7 @@ $image = !empty($attributes['image']) ? (array)$attributes['image'] : [];
 
 <div <?php echo get_block_wrapper_attributes(['id' => $id, 'class' => 'swiper-slide']); ?>>
 	<?php if (!empty($image['url'])) : ?>
-		<a href="<?php echo esc_url($image['sizes']['full']['url']); ?>" class="glightbox1">
+		<a href="<?php echo esc_url($image['sizes']['full']['url']); ?>" class="about-glightbox">
 			<img
 				src="<?php echo esc_url($image['url']); ?>"
 				alt="<?php echo esc_attr($image['alt']); ?>"

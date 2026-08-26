@@ -14,7 +14,7 @@ registerBlockType(metadata.name, {
 		const blockProps = useBlockProps({ className: 'wp-block-snd-article__text' });
 		const innerBlocksProps = useInnerBlocksProps(blockProps, {
 			template: [
-				['core/heading', { level: 2, placeholder: 'Заголовок' }],
+				['core/post-title', { level: 2, placeholder: 'Заголовок' }],
 				['core/heading', { level: 3, placeholder: 'Подзаголовок' }],
 				['core/paragraph', { placeholder: 'Текст статьи...' }],
 			],

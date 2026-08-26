@@ -22,11 +22,11 @@
 		}
 
 		.swiper-slide {
-			background: var(--wp--preset--color--white);
+			background: var(--wp--preset--color--white, #F5F2ED);
 		}
 
 		.swiper-scrollbar-articles {
-			background: var(--wp--preset--color--white);
+			background: var(--wp--preset--color--white, #F5F2ED);
 		}
 	}
 
@@ -63,7 +63,7 @@
 		padding: clamp(1.25rem, 0.947rem + 1.29vw, 2.5rem);
 		box-sizing: border-box;
 		border-radius: 20px;
-		border: 1px var(--wp--preset--color--blue) solid;
+		border: 1px var(--wp--preset--color--blue, #1B3D58) solid;
 		text-decoration: none;
 		color: inherit;
 		display: block;
@@ -79,10 +79,10 @@
 	height: clamp(0.625rem, 0.549rem + 0.32vw, 0.938rem);
 	border-radius: 30px;
 	background: none;
-	border: 1px var(--wp--preset--color--blue) solid;
+	border: 1px var(--wp--preset--color--blue, #1B3D58) solid;
 	box-sizing: border-box;
 
 	.swiper-scrollbar-drag {
-		background: var(--wp--preset--color--blue);
+		background: var(--wp--preset--color--blue, #1B3D58);
 	}
 }

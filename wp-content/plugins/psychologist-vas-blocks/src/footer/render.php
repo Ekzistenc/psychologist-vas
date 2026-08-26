@@ -6,7 +6,6 @@ $phone = !empty($attributes['phone']) ? (array) $attributes['phone'] : [];
 $image_bg = !empty($attributes['imageBg']) ? (array) $attributes['imageBg'] : [];
 $image_mobile = !empty($attributes['imageMobile']) ? (array) $attributes['imageMobile'] : [];
 $menu_left = !empty($attributes['menuFooterLinksLeft']) ? (int) $attributes['menuFooterLinksLeft'] : 0;
-$menu_right = !empty($attributes['menuFooterLinksRight']) ? (int) $attributes['menuFooterLinksRight'] : 0;
 
 $current_soc_list_id = !empty($attributes['currentSocListId']) ? esc_attr($attributes['currentSocListId']) : '';
 $current_soc_list = [];
@@ -102,7 +101,9 @@ $render_footer_menu = static function ($menu_id) {
 
 		<div class="wp-block-snd-link container">
 			<?php $render_footer_menu($menu_left); ?>
-			<?php $render_footer_menu($menu_right); ?>
+			<div class="wp-block-snd-links">
+				<a href="http://sitesanddesign.ru/">Разработка сайта - СайтыиДизайн.рф</a>
+			</div>
 		</div>
 	</div>
 </footer>

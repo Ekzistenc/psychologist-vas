@@ -64,10 +64,6 @@
     "menuFooterLinksLeft": {
       "type": "number",
       "default": 0
-    },
-    "menuFooterLinksRight": {
-      "type": "number",
-      "default": 0
     }
   },
   "supports": {

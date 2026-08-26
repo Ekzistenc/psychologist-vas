@@ -44,7 +44,6 @@ registerBlockType(metadata.name, {
 			currentSocListId,
 			currentSocList,
 			menuFooterLinksLeft,
-			menuFooterLinksRight,
 		} = attributes;
 
 		const { menus, hasMenus } = SNDUseNavigationEntities();
@@ -180,14 +179,6 @@ registerBlockType(metadata.name, {
 							value={menuFooterLinksLeft}
 							onChange={(val) =>
 								setAttributes({ menuFooterLinksLeft: parseInt(val, 10) })
-							}
-						/>
-						<SelectControl
-							label="Правая колонка ссылок"
-							options={options}
-							value={menuFooterLinksRight}
-							onChange={(val) =>
-								setAttributes({ menuFooterLinksRight: parseInt(val, 10) })
 							}
 						/>
 					</PanelBody>
